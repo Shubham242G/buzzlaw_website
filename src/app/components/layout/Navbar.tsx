@@ -64,7 +64,7 @@ export const Navbar = ({ openModal }: NavbarProps) => {
             </li>
             <li>
               <Link 
-                href="/practice-areas" 
+                href="/components/sections/practice-areas" 
                 className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
               >
                 Practice Areas
