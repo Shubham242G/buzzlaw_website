@@ -2,12 +2,9 @@
 
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import { useState } from 'react'
-import { Navbar } from '@/app/components/layout/Navbar'
-import { Footer } from '@/app/components/layout/Footer'
-import { CustomCursor } from '@/app/components/layout/CustomCursor'
-import { Modal } from '@/app/components/ui/Modal'
+
 import { FadeInSection } from '@/app/components/ui/FadeInSection'
+import { useState } from 'react'
 
 // Import the same practices data
 const practices = [

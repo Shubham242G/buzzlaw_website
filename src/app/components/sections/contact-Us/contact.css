@@ -4,43 +4,18 @@
   --black: #0a0a0a;
   --black-2: #0f0f0f;
   --cream: #f5f0e8;
-  --gold: #c9a84c;
-  --gold-light: #e8d5a3;
-  --gold-dim: rgba(201,168,76,0.12);
+  --gold: #9866cb;  /* Changed from #c9a84c to #9866cb */
+  --gold-light: #b87eff;  /* Changed from #e8d5a3 to #b87eff */
+  --gold-dim: rgba(152,102,203,0.12);  /* Changed from rgba(201,168,76,0.12) */
   --rust: #b85c38;
   --grey: #888;
-  --border: rgba(201,168,76,0.2);
+  --border: rgba(152,102,203,0.25);  /* Changed from rgba(201,168,76,0.2) */
   --border-faint: rgba(245,240,232,0.06);
 }
 
-.contact-page * {
-  cursor: none;
-}
 
-.contact-page .cursor {
-  width: 8px;
-  height: 8px;
-  background: var(--gold);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width .2s, height .2s, background .2s;
-  mix-blend-mode: difference;
-}
 
-.contact-page .cursor-ring {
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(201,168,76,.45);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: all .28s ease;
-}
+
 
 .contact-page .hero-ambient {
   position: absolute;
@@ -342,9 +317,13 @@
   animation: pulseGold 2s ease-in-out infinite;
 }
 
-@keyframes pulseGold {
+/* @keyframes pulseGold {
   0%, 100% { box-shadow: 0 0 0 0 rgba(201,168,76,.3); }
   50% { box-shadow: 0 0 0 16px rgba(201,168,76,0); }
+} */
+
+.submit-btn:hover {
+  background: #b87eff;  /* Changed from var(--gold-light) which is now purple */
 }
 
 .contact-page .next-step {

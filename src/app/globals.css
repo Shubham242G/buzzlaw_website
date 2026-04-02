@@ -17,14 +17,10 @@
 }
 
 /* Hide default cursor for the entire document */
-html, body {
-  cursor: none !important;
-}
+
 
 /* Ensure all interactive elements also hide default cursor */
-a, button, [onclick], .cursor-pointer, input, textarea, select {
-  cursor: none !important;
-}
+
 
 body {
   font-family: 'DM Sans', sans-serif;

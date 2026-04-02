@@ -90,29 +90,19 @@ export const Navbar = ({ openModal }: NavbarProps) => {
         </div>
 
         {/* Center Section - Logo */}
-          {/* Center Section - Video Logo */}
+         
       <div className="absolute left-1/2 transform -translate-x-1/2">
-        <Link href="/">
-          <video
-            ref={videoRef}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-12 h-12 md:w-14 md:h-14 object-cover rounded-full cursor-pointer hover:scale-105 transition-transform duration-300"
-            onMouseEnter={() => videoRef.current?.play()}
-            onMouseLeave={() => {
-              if (videoRef.current) {
-                videoRef.current.currentTime = 0
-                videoRef.current.play()
-              }
-            }}
-          >
-            <source src="/assets/buzzLaw.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </Link>
-      </div>
+  <Link href="/">
+    <Image
+      src="/assets/buzzLaw.png"
+      alt="Buzz Law Logo"
+      width={200}
+      height={56}
+      className="cursor-pointer hover:scale-105 transition-transform duration-300"
+      style={{ objectFit: 'contain' }}
+    />
+  </Link>
+</div>
 
         {/* Right Section - Consult Button */}
         <div>

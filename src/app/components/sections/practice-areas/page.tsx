@@ -2,11 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
-import { Navbar } from '../../layout/Navbar'
-import { Footer } from '../../layout/Footer'
-import { CustomCursor } from '../../layout/CustomCursor' 
-import { Modal } from '../../ui/Modal'
+
 import { FadeInSection } from '../../ui/FadeInSection'
 
 const practices = [

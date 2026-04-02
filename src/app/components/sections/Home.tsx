@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import { Navbar } from '../layout/Navbar'
 import { Footer } from '../layout/Footer'
-import { CustomCursor } from '../layout/CustomCursor'
-import { Modal } from '../ui/Modal'
+
+
 import { Ticker } from '../ui/Ticker'
 import { FadeInSection } from '../ui/FadeInSection'
 

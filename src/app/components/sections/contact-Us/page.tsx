@@ -84,9 +84,6 @@ export default function ContactPage() {
 
   return (
     <div className="contact-page">
-      
-
-     
       {/* HERO */}
       <section className="page-hero" style={{
         minHeight: '52vh',
@@ -102,12 +99,12 @@ export default function ContactPage() {
         <div className="hero-grid"></div>
         <div className="hero-bg-word">HELLO</div>
 
-        <div className="eyebrow" style={{ display: 'flex', alignItems: 'center', gap: '14px', fontSize: '.7rem', letterSpacing: '.22em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '20px', position: 'relative', zIndex: 1 }}>
+        <div className="eyebrow" style={{ display: 'flex', alignItems: 'center', gap: '14px', fontSize: '.7rem', letterSpacing: '.22em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '20px', position: 'relative', zIndex: 1 }}>
           <div className="eyebrow-line"></div>Get In Touch
         </div>
         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3.5rem, 8vw, 7.5rem)', fontWeight: 300, lineHeight: '.9', letterSpacing: '-.025em', position: 'relative', zIndex: 1, marginBottom: '24px' }}>
           Let's talk about<br />
-          <em style={{ fontStyle: 'italic', color: '#c9a84c' }}>your brand.</em>
+          <em style={{ fontStyle: 'italic', color: '#9866cb' }}>your brand.</em>
         </h1>
         <p className="hero-sub" style={{ fontSize: '.95rem', lineHeight: 1.8, color: 'rgba(245,240,232,.5)', maxWidth: '460px', position: 'relative', zIndex: 1 }}>
           Whether you have a legal crisis or just want to understand where you stand — your first conversation with us is always free.
@@ -133,7 +130,7 @@ export default function ContactPage() {
           <div className="left-intro reveal-left" style={{ marginBottom: '56px' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 2.5vw, 2.6rem)', fontWeight: 300, lineHeight: 1.1, marginBottom: '16px' }}>
               We're here when<br />
-              <em style={{ fontStyle: 'italic', color: '#c9a84c' }}>you need us.</em>
+              <em style={{ fontStyle: 'italic', color: '#9866cb' }}>you need us.</em>
             </h2>
             <p style={{ fontSize: '.88rem', lineHeight: 1.85, color: 'rgba(245,240,232,.5)', marginTop: '14px' }}>
               Most legal problems faced by brands and creators are predictable — and preventable. Drop us a message and we'll tell you exactly where you stand, what's urgent, and what can wait.
@@ -144,7 +141,7 @@ export default function ContactPage() {
             <div className="info-block" style={{ padding: '28px 0', borderTop: '1px solid rgba(245,240,232,0.06)', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
               <div className="info-icon-wrap">✉</div>
               <div className="info-content">
-                <div className="info-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '5px' }}>Email Us</div>
+                <div className="info-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '5px' }}>Email Us</div>
                 <div className="info-value" style={{ fontSize: '.9rem', color: '#f5f0e8', lineHeight: 1.55 }}><a href="mailto:hello@buzzlaw.in" style={{ color: '#f5f0e8', textDecoration: 'none' }}>hello@buzzlaw.in</a></div>
                 <div className="info-sub" style={{ fontSize: '.75rem', color: '#888', marginTop: '3px', lineHeight: 1.5 }}>We respond within 24 hours on working days</div>
               </div>
@@ -152,7 +149,7 @@ export default function ContactPage() {
             <div className="info-block" style={{ padding: '28px 0', borderTop: '1px solid rgba(245,240,232,0.06)', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
               <div className="info-icon-wrap">📞</div>
               <div className="info-content">
-                <div className="info-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '5px' }}>Call Us</div>
+                <div className="info-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '5px' }}>Call Us</div>
                 <div className="info-value" style={{ fontSize: '.9rem', color: '#f5f0e8', lineHeight: 1.55 }}><a href="tel:+911140000000" style={{ color: '#f5f0e8', textDecoration: 'none' }}>+91 11 4000 0000</a></div>
                 <div className="info-sub" style={{ fontSize: '.75rem', color: '#888', marginTop: '3px', lineHeight: 1.5 }}>Mon – Sat, 10am – 7pm IST</div>
               </div>
@@ -160,7 +157,7 @@ export default function ContactPage() {
             <div className="info-block" style={{ padding: '28px 0', borderTop: '1px solid rgba(245,240,232,0.06)', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
               <div className="info-icon-wrap">💬</div>
               <div className="info-content">
-                <div className="info-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '5px' }}>WhatsApp</div>
+                <div className="info-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '5px' }}>WhatsApp</div>
                 <div className="info-value" style={{ fontSize: '.9rem', color: '#f5f0e8', lineHeight: 1.55 }}><a href="#" style={{ color: '#f5f0e8', textDecoration: 'none' }}>+91 98100 00000</a></div>
                 <div className="info-sub" style={{ fontSize: '.75rem', color: '#888', marginTop: '3px', lineHeight: 1.5 }}>For quick queries — we're usually fast</div>
               </div>
@@ -168,15 +165,15 @@ export default function ContactPage() {
             <div className="info-block" style={{ padding: '28px 0', borderTop: '1px solid rgba(245,240,232,0.06)', borderBottom: '1px solid rgba(245,240,232,0.06)', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
               <div className="info-icon-wrap">📍</div>
               <div className="info-content">
-                <div className="info-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '5px' }}>Office</div>
+                <div className="info-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '5px' }}>Office</div>
                 <div className="info-value" style={{ fontSize: '.9rem', color: '#f5f0e8', lineHeight: 1.55 }}>New Delhi, India</div>
                 <div className="info-sub" style={{ fontSize: '.75rem', color: '#888', marginTop: '3px', lineHeight: 1.5 }}>Connaught Place · By appointment only</div>
               </div>
             </div>
           </div>
 
-          <div className="availability reveal-left" style={{ border: '1px solid rgba(201,168,76,0.2)', padding: '28px 24px', marginBottom: '40px' }}>
-            <div className="avail-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '18px' }}>Office Hours</div>
+          <div className="availability reveal-left" style={{ border: '1px solid rgba(152,102,203,0.25)', padding: '28px 24px', marginBottom: '40px' }}>
+            <div className="avail-label" style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '18px' }}>Office Hours</div>
             <div className="avail-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 0', borderBottom: '1px solid rgba(245,240,232,0.06)', fontSize: '.82rem' }}>
               <span className="avail-day" style={{ color: 'rgba(245,240,232,.5)' }}>Monday – Friday</span>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -220,7 +217,7 @@ export default function ContactPage() {
           <div className="form-header reveal-right" style={{ marginBottom: '52px' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 2.5vw, 2.6rem)', fontWeight: 300, lineHeight: 1.1, marginBottom: '12px' }}>
               Send us a<br />
-              <em style={{ fontStyle: 'italic', color: '#c9a84c' }}>message.</em>
+              <em style={{ fontStyle: 'italic', color: '#9866cb' }}>message.</em>
             </h2>
             <p style={{ fontSize: '.85rem', lineHeight: 1.8, color: 'rgba(245,240,232,.45)' }}>
               Tell us what you're dealing with and we'll get back to you within one business day. For urgent matters, call or WhatsApp us directly.
@@ -228,7 +225,7 @@ export default function ContactPage() {
           </div>
 
           <div style={{ marginBottom: '10px' }}>
-            <div style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '14px' }}>I'm reaching out about...</div>
+            <div style={{ fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '14px' }}>I'm reaching out about...</div>
             <div className="intent-selector reveal-right" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '44px' }}>
               {intentOptions.map((option) => (
                 <button
@@ -248,33 +245,33 @@ export default function ContactPage() {
             <form id="contactForm" onSubmit={handleSubmit} className="reveal-right">
               <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                 <div className="field-group" style={{ marginBottom: '24px' }}>
-                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>First Name *</label>
+                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>First Name *</label>
                   <input type="text" placeholder="Priya" required />
                 </div>
                 <div className="field-group" style={{ marginBottom: '24px' }}>
-                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>Last Name *</label>
+                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>Last Name *</label>
                   <input type="text" placeholder="Sharma" required />
                 </div>
               </div>
 
               <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                 <div className="field-group" style={{ marginBottom: '24px' }}>
-                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>Email Address *</label>
+                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>Email Address *</label>
                   <input type="email" placeholder="priya@yourbrand.com" required />
                 </div>
                 <div className="field-group" style={{ marginBottom: '24px' }}>
-                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>Phone Number</label>
+                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>Phone Number</label>
                   <input type="tel" placeholder="+91 98xxx xxxxx" />
                 </div>
               </div>
 
               <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                 <div className="field-group" style={{ marginBottom: '24px' }}>
-                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>Brand / Company Name</label>
+                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>Brand / Company Name</label>
                   <input type="text" placeholder="Your Brand Name" />
                 </div>
                 <div className="field-group" style={{ marginBottom: '24px' }}>
-                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>I am a...</label>
+                  <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>I am a...</label>
                   <div className="select-wrap">
                     <select>
                       <option value="">Select one...</option>
@@ -293,7 +290,7 @@ export default function ContactPage() {
               </div>
 
               <div className="field-group" style={{ marginBottom: '24px' }}>
-                <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>Practice Area</label>
+                <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>Practice Area</label>
                 <div className="select-wrap">
                   <select>
                     <option value="">Which area of law concerns you?</option>
@@ -313,12 +310,12 @@ export default function ContactPage() {
               </div>
 
               <div className="field-group" style={{ marginBottom: '24px' }}>
-                <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>Tell Us What's Going On *</label>
+                <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>Tell Us What's Going On *</label>
                 <textarea placeholder="Describe your situation briefly — the more context you give us, the more useful our response will be. Don't worry about legal terminology; just tell us what happened or what you need." required></textarea>
               </div>
 
               <div className="field-group" style={{ marginBottom: '20px' }}>
-                <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>How Urgent Is This?</label>
+                <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>How Urgent Is This?</label>
                 <div className="urgency-row" style={{ display: 'flex', gap: '12px', marginBottom: '28px' }}>
                   <button type="button" className={`urgency-btn ${urgency === 'No Rush' ? 'active' : ''}`} onClick={() => setUrgencyLevel('No Rush')}>🟢 No Rush</button>
                   <button type="button" className={`urgency-btn ${urgency === 'This Week' ? 'active' : ''}`} onClick={() => setUrgencyLevel('This Week')}>🟡 This Week</button>
@@ -327,7 +324,7 @@ export default function ContactPage() {
               </div>
 
               <div className="field-group" style={{ marginBottom: '24px' }}>
-                <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: '9px' }}>How Did You Hear About Us?</label>
+                <label style={{ display: 'block', fontSize: '.62rem', letterSpacing: '.18em', textTransform: 'uppercase', color: '#9866cb', marginBottom: '9px' }}>How Did You Hear About Us?</label>
                 <div className="select-wrap">
                   <select>
                     <option value="">Select...</option>
@@ -345,7 +342,7 @@ export default function ContactPage() {
               <div className="consent-row" style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', marginBottom: '36px', padding: '20px', border: '1px solid rgba(245,240,232,0.06)', background: 'rgba(255,255,255,.02)' }}>
                 <input type="checkbox" className="consent-check" required id="consent" />
                 <label htmlFor="consent" className="consent-text" style={{ fontSize: '.78rem', lineHeight: 1.7, color: 'rgba(245,240,232,.4)' }}>
-                  I agree that Buzz Law may use my details to respond to this enquiry. I understand this does not create a lawyer-client relationship. I have read the <a href="#" style={{ color: '#c9a84c', textDecoration: 'none' }}>Privacy Policy</a> and <a href="#" style={{ color: '#c9a84c', textDecoration: 'none' }}>Terms of Use</a>.
+                  I agree that Buzz Law may use my details to respond to this enquiry. I understand this does not create a lawyer-client relationship. I have read the <a href="#" style={{ color: '#9866cb', textDecoration: 'none' }}>Privacy Policy</a> and <a href="#" style={{ color: '#9866cb', textDecoration: 'none' }}>Terms of Use</a>.
                 </label>
               </div>
 
@@ -358,7 +355,7 @@ export default function ContactPage() {
           ) : (
             <div className={`success-state ${formSubmitted ? 'visible' : ''}`} style={{ textAlign: 'center', padding: '80px 40px' }}>
               <div className="success-icon">✦</div>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', marginBottom: '12px' }}>Message <em style={{ fontStyle: 'italic', color: '#c9a84c' }}>received.</em></h3>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', marginBottom: '12px' }}>Message <em style={{ fontStyle: 'italic', color: '#9866cb' }}>received.</em></h3>
               <p style={{ fontSize: '.88rem', color: 'rgba(245,240,232,.5)', lineHeight: 1.8, maxWidth: '360px', margin: '0 auto' }}>Thank you for reaching out. A Buzz Law specialist will review your message and get back to you within one business day.</p>
               <div className="next-steps" style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '12px', textAlign: 'left', maxWidth: '340px', marginLeft: 'auto', marginRight: 'auto' }}>
                 <div className="next-step">
@@ -376,8 +373,8 @@ export default function ContactPage() {
               </div>
               <div style={{ marginTop: '40px', fontSize: '.78rem', color: '#888' }}>
                 Need to reach us immediately?<br />
-                <a href="tel:+911140000000" style={{ color: '#c9a84c', textDecoration: 'none' }}>+91 11 4000 0000</a> &nbsp;or&nbsp;
-                <a href="mailto:hello@buzzlaw.in" style={{ color: '#c9a84c', textDecoration: 'none' }}>hello@buzzlaw.in</a>
+                <a href="tel:+911140000000" style={{ color: '#9866cb', textDecoration: 'none' }}>+91 11 4000 0000</a> &nbsp;or&nbsp;
+                <a href="mailto:hello@buzzlaw.in" style={{ color: '#9866cb', textDecoration: 'none' }}>hello@buzzlaw.in</a>
               </div>
             </div>
           )}
