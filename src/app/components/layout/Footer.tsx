@@ -17,7 +17,7 @@ export const Footer = ({ openModal }: FooterProps) => {
             <Link href="/" className="block mb-4">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/assets/buzzLaw.png"
+                  src="/assets/buzzlaw.png"
                   alt="Buzz Law Logo"
                   width={400}
                   height={400}

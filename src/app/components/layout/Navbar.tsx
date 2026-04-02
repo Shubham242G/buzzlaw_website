@@ -94,7 +94,7 @@ export const Navbar = ({ openModal }: NavbarProps) => {
       <div className="absolute left-1/2 transform -translate-x-1/2">
   <Link href="/">
     <Image
-      src="/assets/buzzLaw.png"
+      src="/assets/buzzlaw.png"
       alt="Buzz Law Logo"
       width={200}
       height={56}
