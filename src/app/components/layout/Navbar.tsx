@@ -54,13 +54,13 @@ export const Navbar = ({ openModal }: NavbarProps) => {
         {/* Desktop Left Section - Navigation Links */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="flex gap-8 list-none">
-            <li>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity bg-transparent border-none cursor-pointer"
+             <li>
+              <Link 
+                href="/components/sections/about-Us" 
+                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
               >
-                About
-              </button>
+                About us
+              </Link>
             </li>
             <li>
               <Link 
@@ -71,12 +71,20 @@ export const Navbar = ({ openModal }: NavbarProps) => {
               </Link>
             </li>
             <li>
-              <button
-                onClick={() => scrollToSection('process')}
-                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity bg-transparent border-none cursor-pointer"
+              <Link 
+                href="/components/sections/how-We-Work" 
+                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
               >
-                How We Work
-              </button>
+                How we work
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/components/sections/contact-Us" 
+                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
@@ -127,12 +135,13 @@ export const Navbar = ({ openModal }: NavbarProps) => {
         >
           <ul className="flex flex-col gap-6">
             <li>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-[#f5f0e8] text-sm tracking-[0.12em] uppercase hover:text-[#9866cb] transition-colors w-full text-left"
+              <Link 
+                href="/components/sections/about-Us" 
+                className="text-[#f5f0e8] text-sm tracking-[0.12em] uppercase hover:text-[#9866cb] transition-colors block"
+                onClick={() => setMobileMenuOpen(false)}
               >
-                About
-              </button>
+                About us
+              </Link>
             </li>
             <li>
               <Link 
@@ -144,12 +153,21 @@ export const Navbar = ({ openModal }: NavbarProps) => {
               </Link>
             </li>
             <li>
-              <button
-                onClick={() => scrollToSection('process')}
-                className="text-[#f5f0e8] text-sm tracking-[0.12em] uppercase hover:text-[#9866cb] transition-colors w-full text-left"
+               <Link 
+                href="/components/sections/how-We-Work" 
+                className="text-[#f5f0e8] text-sm tracking-[0.12em] uppercase hover:text-[#9866cb] transition-colors block"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 How We Work
-              </button>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/components/sections/contact-Us" 
+                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
+              >
+                Contact Us
+              </Link>
             </li>
             <li className="pt-4">
               <button

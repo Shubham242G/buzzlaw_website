@@ -1,9 +1,11 @@
-import HomePage from "./components/sections/Home";
+// app/page.tsx (or any page)
+import ClientWrapper from './client-layout'
+import HomePage from './components/sections/Home'  // Your actual page component
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="min-h-screen bg-black">
+
       <HomePage />
-    </div>
-  );
+
+  )
 }

@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
+// app/layout.tsx
 import './globals.css'
-import { CustomCursor } from './components/layout/CustomCursor'
+import ClientLayout from './client-layout'
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Buzz Law — India\'s Fashion, Influencer & Creator Economy Law Firm',
   description: 'India\'s first law firm built exclusively for fashion brands, influencers, media companies, and the creator economy.',
 }
@@ -14,9 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <CustomCursor />
-        {children}
+      <body className="bg-black text-[#f5f0e8] overflow-x-hidden">
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   )

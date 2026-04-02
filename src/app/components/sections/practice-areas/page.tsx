@@ -209,8 +209,7 @@ export default function PracticeAreasPage() {
 
   return (
     <>
-      <CustomCursor />
-      <Navbar openModal={openModal} />
+      
       
       <main className="pt-32 pb-20">
         {/* Hero Section */}
@@ -292,8 +291,7 @@ export default function PracticeAreasPage() {
         </section>
       </main>
 
-      <Footer openModal={openModal} />
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
+    
     </>
   )
 }

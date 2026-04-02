@@ -214,8 +214,7 @@ export default function PracticeDetailPage() {
   if (!practice) {
     return (
       <>
-        <CustomCursor />
-        <Navbar openModal={openModal} />
+        
         <main className="min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-['Cormorant_Garamond'] mb-4">Practice Area Not Found</h1>
@@ -224,7 +223,7 @@ export default function PracticeDetailPage() {
             </Link>
           </div>
         </main>
-        <Footer openModal={openModal} />
+    
       </>
     )
   }
@@ -232,7 +231,7 @@ export default function PracticeDetailPage() {
   return (
     <>
       {/* <CustomCursor /> */}
-      <Navbar openModal={openModal} />
+      
       
       <main className="pt-32 pb-20">
         {/* Hero Section */}
@@ -382,8 +381,6 @@ export default function PracticeDetailPage() {
         </section>
       </main>
 
-      <Footer openModal={openModal} />
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </>
   )
 }

@@ -202,8 +202,6 @@ export default function HomePage() {
 
   return (
     <>
-      <CustomCursor />
-      <Navbar openModal={openModal} />
       
       <main className="pt-22">
         {/* Hero Section */}
@@ -549,9 +547,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-
-      <Footer openModal={openModal} />
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
       
       <style jsx>{`
         @keyframes scrollLine {
