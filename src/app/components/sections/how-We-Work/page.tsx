@@ -269,7 +269,8 @@ export default function HowWeWorkPage() {
     </div>
   </div>
 
-  <div className="relative z-10 hidden lg:flex flex-col items-end justify-end gap-0 pb-2 max-w-[220px]">
+  {/* Numbers moved to right corner with ml-auto */}
+  <div className="relative z-10 hidden lg:flex flex-col items-end justify-end gap-0 pb-2 max-w-[220px] ml-auto">
     <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-full">
       <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1.5">48h</div>
       <div className="text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Standard Contract Review</div>

@@ -108,39 +108,49 @@ export default function AboutPage() {
             {/* Hero Section */}
 
             <section className="min-h-screen lg:min-h-[95vh] grid lg:grid-cols-2 items-end px-6 md:px-12 lg:px-[60px] pb-20 lg:pb-[80px] pt-32 lg:pt-0 relative overflow-hidden">
-                {/* Background Elements */}
-                <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_65%_55%_at_85%_25%,rgba(152,102,203,0.08)_0%,transparent_60%),radial-gradient(ellipse_50%_70%_at_5%_85%,rgba(152,102,203,0.05)_0%,transparent_55%)]" />
-                    <div className="absolute inset-0 bg-[linear-gradient(rgba(152,102,203,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(152,102,203,0.03)_1px,transparent_1px)] bg-[length:70px_70px]" />
-                </div>
-                <div className="absolute font-['Bebas_Neue',sans-serif] text-[24vw] lg:text-[28vw] text-[rgba(152,102,203,0.04)] right-[-2vw] lg:right-[-3vw] top-1/2 -translate-y-1/2 leading-none pointer-events-none select-none tracking-[-0.02em]">
-                    17
-                </div>
+  {/* Background Elements */}
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute inset-0 bg-[radial-gradient(ellipse_65%_55%_at_85%_25%,rgba(152,102,203,0.08)_0%,transparent_60%),radial-gradient(ellipse_50%_70%_at_5%_85%,rgba(152,102,203,0.05)_0%,transparent_55%)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(rgba(152,102,203,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(152,102,203,0.03)_1px,transparent_1px)] bg-[length:70px_70px]" />
+  </div>
+  <div className="absolute font-['Bebas_Neue',sans-serif] text-[24vw] lg:text-[28vw] text-[rgba(152,102,203,0.04)] right-[-2vw] lg:right-[-3vw] top-1/2 -translate-y-1/2 leading-none pointer-events-none select-none tracking-[-0.02em]">
+    17
+  </div>
 
-                <div className="relative z-10 max-w-[480px]">
-                    <div className="flex items-center gap-3 mb-6">
-                        <div className="w-10 h-px bg-[#9866cb]" />
-                        <span className="text-sm lg:text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">Our Story</span>
-                    </div>
-                    <h1 className="font-['Cormorant_Garamond',serif] text-[clamp(2.75rem,5.5vw,5rem)] lg:text-[clamp(3rem,6vw,6rem)] font-light leading-[0.92] tracking-[-0.02em] mb-8">
-                        Built on<br />
-                        17 years of<br />
-                        <em className="italic text-[#9866cb] not-italic">trust.</em>
-                    </h1>
-                    <p className="text-base lg:text-[0.98rem] leading-relaxed text-[rgba(245,240,232,0.55)] max-w-[420px]">
-                        Buzz Law didn't start from a blank page. It was born from one of India's most respected legal practices — carrying forward decades of expertise, into the world of fashion, creators, and the new economy.
-                    </p>
-                </div>
+  <div className="relative z-10 max-w-[480px]">
+    <div className="flex items-center gap-3 mb-6">
+      <div className="w-10 h-px bg-[#9866cb]" />
+      <span className="text-sm lg:text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">Our Story</span>
+    </div>
+    <h1 className="font-['Cormorant_Garamond',serif] text-[clamp(2.75rem,5.5vw,5rem)] lg:text-[clamp(3rem,6vw,6rem)] font-light leading-[0.92] tracking-[-0.02em] mb-8">
+      Built on<br />
+      17 years of<br />
+      <em className="italic text-[#9866cb] not-italic">trust.</em>
+    </h1>
+    <p className="text-base lg:text-[0.98rem] leading-relaxed text-[rgba(245,240,232,0.55)] max-w-[420px]">
+      Buzz Law didn't start from a blank page. It was born from one of India's most respected legal practices — carrying forward decades of expertise, into the world of fashion, creators, and the new economy.
+    </p>
+  </div>
 
-                <div className="relative z-10 hidden lg:flex flex-col items-end gap-0 pb-2 max-w-[240px]">
-                    {stats.map((stat, idx) => (
-                        <div key={idx} className="text-right py-6 border-t border-[rgba(152,102,203,0.2)] w-full last:border-b">
-                            <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1">{stat.num}</div>
-                            <div className="text-xs lg:text-[0.62rem] tracking-[0.15em] uppercase text-[#888]">{stat.label}</div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+  <div className="relative z-10 hidden lg:flex flex-col items-end gap-0 pb-2 max-w-[240px] ml-auto">
+    <div className="text-right py-6 border-t border-[rgba(152,102,203,0.2)] w-full">
+      <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1">17+</div>
+      <div className="text-xs lg:text-[0.62rem] tracking-[0.15em] uppercase text-[#888]">Years of Practice</div>
+    </div>
+    <div className="text-right py-6 border-t border-[rgba(152,102,203,0.2)] w-full">
+      <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1">500+</div>
+      <div className="text-xs lg:text-[0.62rem] tracking-[0.15em] uppercase text-[#888]">Brands Protected</div>
+    </div>
+    <div className="text-right py-6 border-t border-[rgba(152,102,203,0.2)] w-full">
+      <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1">1000+</div>
+      <div className="text-xs lg:text-[0.62rem] tracking-[0.15em] uppercase text-[#888]">Trademarks Filed</div>
+    </div>
+    <div className="text-right py-6 border-t border-[rgba(152,102,203,0.2)] w-full border-b">
+      <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1">98%</div>
+      <div className="text-xs lg:text-[0.62rem] tracking-[0.15em] uppercase text-[#888]">Client Retention</div>
+    </div>
+  </div>
+</section>
 
             {/* Heritage Banner */}
             <div className="bg-[rgba(152,102,203,0.08)] border-y border-[rgba(152,102,203,0.15)] overflow-hidden">
@@ -235,33 +245,6 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Timeline Section */}
-            <section className="px-6 md:px-8 lg:px-[60px] pb-24 lg:pb-[130px]">
-                <div className="mb-[70px]">
-                    <div className="flex items-center gap-3 mb-4">
-                        <div className="w-[30px] h-px bg-[#9866cb]" />
-                        <span className="text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">Our Journey</span>
-                    </div>
-                    <h2 className="font-['Cormorant_Garamond',serif] text-[clamp(2rem,3.5vw,3.4rem)] font-light leading-[1.1] mt-3">
-                        17 years of<br />
-                        <em className="italic text-[#9866cb] not-italic">legal excellence.</em>
-                    </h2>
-                </div>
-                <div className="relative pl-0 before:absolute before:left-0 before:top-5 before:bottom-5 before:w-px before:bg-[rgba(152,102,203,0.25)]">
-                    {timeline.map((item, idx) => (
-                        <div key={idx} className="grid lg:grid-cols-[120px_1fr] gap-0 lg:gap-10 py-7 border-b border-[rgba(245,240,232,0.06)] relative">
-                            <div className="font-['Bebas_Neue',sans-serif] text-2xl text-[#9866cb] tracking-[0.05em] leading-none relative mb-2 lg:mb-0">
-                                {item.year}
-                                <div className="absolute -right-[21px] top-2 w-2 h-2 rounded-full border border-[#9866cb] bg-black hidden lg:block" />
-                            </div>
-                            <div>
-                                <h4 className="text-[0.92rem] font-medium mb-1 text-[#f5f0e8]">{item.title}</h4>
-                                <p className="text-[0.8rem] leading-relaxed text-[rgba(245,240,232,0.45)]">{item.desc}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
 
             {/* Team Section */}
             <section className="px-6 md:px-8 lg:px-[60px] py-24 lg:py-[130px] bg-[rgba(255,255,255,0.015)] border-t border-[rgba(245,240,232,0.06)]">
@@ -285,7 +268,7 @@ export default function AboutPage() {
       <div className="w-full aspect-[3/4] bg-[#0d0d0d] relative overflow-hidden">
         {/* Full square image - no circle */}
         <img 
-          src="/assets/staff/gaurav.jpeg"
+          src="/assets/staff/Gaurav.jpeg"
           alt="Adv. Gaurav Sharma"
           className="w-full h-full object-cover transition-all duration-600 group-hover:scale-105"
         />
@@ -294,7 +277,7 @@ export default function AboutPage() {
       <div className="p-7 lg:p-[28px]">
         <div className="flex items-center gap-2 mb-2">
           <div className="w-4 h-px bg-[#9866cb]" />
-          <span className="text-[0.6rem] tracking-[0.18em] uppercase text-[#9866cb]">Founder & Principal</span>
+          <span className="text-[0.6rem] tracking-[0.18em] uppercase text-[#9866cb]">Founder</span>
         </div>
         <div className="font-['Cormorant_Garamond',serif] text-[1.9rem] font-normal mb-1 text-[#f5f0e8]">Adv. Gaurav Sharma</div>
         <div className="text-[0.78rem] text-[rgba(245,240,232,0.45)] mb-4">Founder, Gaurav Sharma Law Offices & Buzz Law</div>
@@ -324,7 +307,7 @@ export default function AboutPage() {
       <div className="w-full aspect-[3/4] bg-[#0d0d0d] relative overflow-hidden">
         {/* Full square image - no circle */}
         <img 
-          src="/assets/staff/anusha.jpeg"
+          src="/assets/staff/Anusha.jpeg"
           alt="Adv. Anusha Girish"
           className="w-full h-full object-cover transition-all duration-600 group-hover:scale-105"
         />
@@ -362,7 +345,7 @@ export default function AboutPage() {
       <div className="w-full aspect-[3/4] bg-[#0d0d0d] relative overflow-hidden">
         {/* Full square image - no circle */}
         <img 
-          src="/assets/staff/laxman.jpeg"
+          src="/assets/staff/Laxman.jpeg"
           alt="Adv. Laxman Kumar"
           className="w-full h-full object-cover transition-all duration-600 group-hover:scale-105"
         />
