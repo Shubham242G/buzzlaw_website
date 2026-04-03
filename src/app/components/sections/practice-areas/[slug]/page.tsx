@@ -11,7 +11,6 @@ const practices = [
   {
     id: 'brand-protection',
     num: '01',
-    icon: '🛡️',
     title: 'Brand Protection',
     tagline: 'Own your identity. Defend it fiercely.',
     description: 'Your brand is your most valuable asset. We make sure no one can copy it, steal it, or profit from it without your permission.',
@@ -32,7 +31,6 @@ const practices = [
   {
     id: 'fashion-startup-law',
     num: '02',
-    icon: '✂️',
     title: 'Fashion Startup Law',
     tagline: 'Built right from day one.',
     description: 'Launching a fashion brand involves far more legal complexity than most founders realise. We help you structure smartly, protect founder rights, and position your label for investment.',
@@ -53,7 +51,6 @@ const practices = [
   {
     id: 'manufacturing-supply-chain',
     num: '03',
-    icon: '🏭',
     title: 'Manufacturing & Supply Chain',
     tagline: 'Contracts that protect your production.',
     description: 'Bad vendor contracts can destroy a season. We draft and review manufacturing agreements, vendor terms, and compliance frameworks.',
@@ -74,7 +71,6 @@ const practices = [
   {
     id: 'retail-ecommerce-law',
     num: '04',
-    icon: '🛍️',
     title: 'Retail & E-Commerce Law',
     tagline: 'Sell everywhere. Comply everywhere.',
     description: "Whether you're on Myntra, launching your own D2C store, or signing a marketplace agreement — we handle the compliance.",
@@ -95,7 +91,6 @@ const practices = [
   {
     id: 'brand-collaborations',
     num: '05',
-    icon: '🤝',
     title: 'Brand Collaborations',
     tagline: 'Collab confidently. Protect your share.',
     description: 'Designer drops, celebrity lines, licensing deals — collaborations create immense value but carry serious legal risk if structured badly.',
@@ -116,7 +111,6 @@ const practices = [
   {
     id: 'fashion-litigation',
     num: '06',
-    icon: '⚖️',
     title: 'Fashion Litigation',
     tagline: "When it's time to fight — we fight.",
     description: 'Design piracy, counterfeit goods, contract breaches — when someone crosses a line, you need lawyers who move fast and hit hard.',
@@ -137,7 +131,6 @@ const practices = [
   {
     id: 'influencer-law',
     num: '07',
-    icon: '📱',
     title: 'Influencer Law',
     tagline: 'Your content. Your terms. Your protection.',
     description: 'Brand deals, ambassador contracts, ASCI compliance, copyright disputes — influencer law is a minefield.',
@@ -158,7 +151,6 @@ const practices = [
   {
     id: 'media-entertainment-law',
     num: '08',
-    icon: '🎬',
     title: 'Media & Entertainment Law',
     tagline: 'From set to screen. Legally protected.',
     description: 'Production agreements, OTT compliance, defamation cases, celebrity image rights — we advise content creators and production houses.',
@@ -179,7 +171,6 @@ const practices = [
   {
     id: 'creator-economy-law',
     num: '09',
-    icon: '🎙️',
     title: 'Creator Economy Law',
     tagline: 'New economy. Real legal needs.',
     description: 'YouTubers, podcasters, affiliate marketers, and digital creators face unique legal challenges.',
@@ -239,7 +230,6 @@ export default function PracticeDetailPage() {
             </Link>
             
             <div className="flex items-center gap-4 mb-6">
-              <div className="text-5xl md:text-6xl">{practice.icon}</div>
               <div className="text-sm text-[#9866cb] font-mono">{practice.num}</div>
             </div>
             

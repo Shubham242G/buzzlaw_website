@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X } from 'lucide-react' // Install: npm install lucide-react
+import { Menu, X } from 'lucide-react'
 
 interface NavbarProps {
   openModal: () => void
@@ -12,7 +12,6 @@ interface NavbarProps {
 
 export const Navbar = ({ openModal }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false)
-  const videoRef = useRef<HTMLVideoElement>(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -23,14 +22,6 @@ export const Navbar = ({ openModal }: NavbarProps) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setMobileMenuOpen(false)
-    }
-  }
-
   return (
     <>
       <motion.nav
@@ -39,11 +30,10 @@ export const Navbar = ({ openModal }: NavbarProps) => {
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-6 md:px-[60px] transition-all duration-300 ${
           scrolled
-            ? 'bg-[#0a0a0a]/98 py-4 md:py-[18px]'
-            : 'bg-gradient-to-b from-[#0a0a0a]/95 to-transparent py-6 md:py-7'
+            ? 'bg-[#0a0a0a] py-4 md:py-[18px] shadow-md'
+            : 'bg-[#140d20] py-6 md:py-7'
         }`}
       >
-        {/* Mobile Menu Button - Left */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden text-[#f5f0e8] z-[101]"
@@ -51,37 +41,36 @@ export const Navbar = ({ openModal }: NavbarProps) => {
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Desktop Left Section - Navigation Links */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="flex gap-8 list-none">
-             <li>
-              <Link 
-                href="/components/sections/about-Us" 
-                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
+            <li>
+              <Link
+                href="/components/sections/about-Us"
+                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-90 hover:opacity-100 hover:text-[#9866cb] transition-all"
               >
                 About us
               </Link>
             </li>
             <li>
-              <Link 
-                href="/components/sections/practice-areas" 
-                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
+              <Link
+                href="/components/sections/practice-areas"
+                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-90 hover:opacity-100 hover:text-[#9866cb] transition-all"
               >
                 Practice Areas
               </Link>
             </li>
             <li>
-              <Link 
-                href="/components/sections/how-We-Work" 
-                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
+              <Link
+                href="/components/sections/how-We-Work"
+                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-90 hover:opacity-100 hover:text-[#9866cb] transition-all"
               >
                 How we work
               </Link>
             </li>
             <li>
-              <Link 
-                href="/components/sections/contact-Us" 
-                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
+              <Link
+                href="/components/sections/contact-Us"
+                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-90 hover:opacity-100 hover:text-[#9866cb] transition-all"
               >
                 Contact Us
               </Link>
@@ -89,22 +78,19 @@ export const Navbar = ({ openModal }: NavbarProps) => {
           </ul>
         </div>
 
-        {/* Center Section - Logo */}
-         
-      <div className="absolute left-1/2 transform -translate-x-1/2">
-  <Link href="/">
-    <Image
-      src="/assets/buzzlaw.png"
-      alt="Buzz Law Logo"
-      width={200}
-      height={56}
-      className="cursor-pointer hover:scale-105 transition-transform duration-300"
-      style={{ objectFit: 'contain' }}
-    />
-  </Link>
-</div>
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <Link href="/">
+            <Image
+              src="/assets/buzzlaw.png"
+              alt="Buzz Law Logo"
+              width={260}
+              height={72}
+              className="w-[180px] md:w-[260px] h-auto cursor-pointer hover:scale-105 transition-transform duration-300"
+              priority
+            />
+          </Link>
+        </div>
 
-        {/* Right Section - Consult Button */}
         <div>
           <button
             onClick={openModal}
@@ -115,18 +101,17 @@ export const Navbar = ({ openModal }: NavbarProps) => {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
-          className="fixed top-0 left-0 bottom-0 w-64 bg-[#0a0a0a]/98 backdrop-blur-lg z-[99] pt-24 px-6 md:hidden"
+          className="fixed top-0 left-0 bottom-0 w-64 bg-[#0a0a0a] z-[99] pt-24 px-6 md:hidden"
         >
           <ul className="flex flex-col gap-6">
             <li>
-              <Link 
-                href="/components/sections/about-Us" 
+              <Link
+                href="/components/sections/about-Us"
                 className="text-[#f5f0e8] text-sm tracking-[0.12em] uppercase hover:text-[#9866cb] transition-colors block"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -134,8 +119,8 @@ export const Navbar = ({ openModal }: NavbarProps) => {
               </Link>
             </li>
             <li>
-              <Link 
-                href="/components/sections/practice-areas" 
+              <Link
+                href="/components/sections/practice-areas"
                 className="text-[#f5f0e8] text-sm tracking-[0.12em] uppercase hover:text-[#9866cb] transition-colors block"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -143,8 +128,8 @@ export const Navbar = ({ openModal }: NavbarProps) => {
               </Link>
             </li>
             <li>
-               <Link 
-                href="/components/sections/how-We-Work" 
+              <Link
+                href="/components/sections/how-We-Work"
                 className="text-[#f5f0e8] text-sm tracking-[0.12em] uppercase hover:text-[#9866cb] transition-colors block"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -152,9 +137,10 @@ export const Navbar = ({ openModal }: NavbarProps) => {
               </Link>
             </li>
             <li>
-              <Link 
-                href="/components/sections/contact-Us" 
-                className="text-[#f5f0e8] text-xs tracking-[0.12em] uppercase opacity-70 hover:opacity-100 hover:text-[#9866cb] transition-opacity"
+              <Link
+                href="/components/sections/contact-Us"
+                className="text-[#f5f0e8] text-sm tracking-[0.12em] uppercase hover:text-[#9866cb] transition-colors block"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Contact Us
               </Link>

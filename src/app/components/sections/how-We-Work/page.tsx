@@ -148,11 +148,28 @@ export default function HowWeWorkPage() {
     }
   ]
 
+  // Updated promises array with custom icon paths
   const promises = [
-    { icon: '⚡', title: 'Speed Promise', desc: 'Standard contracts in 48h. Urgent matters same day. We move at your pace.' },
-    { icon: '💬', title: 'Clarity Promise', desc: 'Every document explained in plain English. No legal fog, ever.' },
-    { icon: '₹', title: 'Price Promise', desc: 'Flat fees quoted upfront. What we quote is what you pay.' },
-    { icon: '🎯', title: 'Focus Promise', desc: 'We only work in fashion, influencer & creator law. This is all we do.' }
+    { 
+      iconPath: '/assets/contact-page/lightning.png',
+      title: 'Speed Promise', 
+      desc: 'Standard contracts in 48h. Urgent matters same day. We move at your pace.' 
+    },
+    { 
+      iconPath: '/assets/contact-page/chatbox.png',
+      title: 'Clarity Promise', 
+      desc: 'Every document explained in plain English. No legal fog, ever.' 
+    },
+    { 
+      iconPath: '/assets/contact-page/graph.png',
+      title: 'Price Promise', 
+      desc: 'Flat fees quoted upfront. What we quote is what you pay.' 
+    },
+    { 
+      iconPath: '/assets/contact-page/target.png',
+      title: 'Focus Promise', 
+      desc: 'We only work in fashion, influencer & creator law. This is all we do.' 
+    }
   ]
 
   const retainerPlans = [
@@ -220,63 +237,64 @@ export default function HowWeWorkPage() {
   return (
     <main className="mt-20 bg-black text-[#f5f0e8] overflow-x-hidden">
       {/* Hero Section */}
-      <section className="min-h-screen grid lg:grid-cols-2 items-end px-6 md:px-8 lg:px-[60px] pb-16 lg:pb-[90px] pt-32 lg:pt-0 relative overflow-hidden">
-        {/* Background Elements - Purple theme */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_70%_at_75%_35%,rgba(152,102,203,0.07)_0%,transparent_65%),radial-gradient(ellipse_40%_50%_at_15%_75%,rgba(152,102,203,0.05)_0%,transparent_55%)]" />
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(152,102,203,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(152,102,203,0.035)_1px,transparent_1px)] bg-[length:72px_72px]" />
-        </div>
-        <div className="absolute font-['Bebas_Neue',sans-serif] text-[32vw] text-[rgba(152,102,203,0.04)] right-[-4vw] top-1/2 -translate-y-1/2 leading-none pointer-events-none select-none tracking-[-0.02em]">
-          05
-        </div>
+     
+<section className="min-h-screen lg:min-h-[95vh] grid lg:grid-cols-2 items-end px-6 md:px-12 lg:px-[60px] pb-20 lg:pb-[80px] pt-32 lg:pt-0 relative overflow-hidden">
+  {/* Background Elements */}
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_70%_at_75%_35%,rgba(152,102,203,0.07)_0%,transparent_65%),radial-gradient(ellipse_40%_50%_at_15%_75%,rgba(152,102,203,0.05)_0%,transparent_55%)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(rgba(152,102,203,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(152,102,203,0.035)_1px,transparent_1px)] bg-[length:72px_72px]" />
+  </div>
+  <div className="absolute font-['Bebas_Neue',sans-serif] text-[24vw] lg:text-[32vw] text-[rgba(152,102,203,0.04)] right-[-3vw] top-1/2 -translate-y-1/2 leading-none pointer-events-none select-none tracking-[-0.02em]">
+    05
+  </div>
 
-        <div className="relative z-10">
-          <div className="flex items-center gap-3 mb-7">
-            <div className="w-10 h-px bg-[#9866cb]" />
-            <span className="text-[0.7rem] tracking-[0.22em] uppercase text-[#9866cb]">Our Process</span>
-          </div>
-          <h1 className="font-['Cormorant_Garamond',serif] text-[clamp(3.8rem,7.5vw,7.5rem)] font-light leading-[0.9] tracking-[-0.025em] mb-9">
-            Legal work<br />
-            done <em className="italic text-[#9866cb] not-italic">the right</em><br />
-            way.
-          </h1>
-          <p className="text-base leading-relaxed text-[rgba(245,240,232,0.58)] max-w-[420px] mb-12">
-            No black boxes. No surprise bills. No lawyers who disappear after you sign. Here's exactly how we work — from your first call to long-term brand protection.
-          </p>
-          <div className="flex flex-wrap gap-2.5">
-            <div className="border border-[rgba(152,102,203,0.25)] text-[0.65rem] tracking-[0.14em] uppercase px-[18px] py-2 text-[rgba(245,240,232,0.5)] hover:border-[#9866cb] hover:text-[#9866cb] transition-all">Transparent Process</div>
-            <div className="border border-[rgba(152,102,203,0.25)] text-[0.65rem] tracking-[0.14em] uppercase px-[18px] py-2 text-[rgba(245,240,232,0.5)] hover:border-[#9866cb] hover:text-[#9866cb] transition-all">Fixed Timelines</div>
-            <div className="border border-[rgba(152,102,203,0.25)] text-[0.65rem] tracking-[0.14em] uppercase px-[18px] py-2 text-[rgba(245,240,232,0.5)] hover:border-[#9866cb] hover:text-[#9866cb] transition-all">Flat Fees</div>
-            <div className="border border-[rgba(152,102,203,0.25)] text-[0.65rem] tracking-[0.14em] uppercase px-[18px] py-2 text-[rgba(245,240,232,0.5)] hover:border-[#9866cb] hover:text-[#9866cb] transition-all">Creative Industry Focus</div>
-          </div>
-        </div>
+  <div className="relative z-10 max-w-[480px]">
+    <div className="flex items-center gap-3 mb-6">
+      <div className="w-10 h-px bg-[#9866cb]" />
+      <span className="text-sm lg:text-[0.7rem] tracking-[0.22em] uppercase text-[#9866cb]">Our Process</span>
+    </div>
+    <h1 className="font-['Cormorant_Garamond',serif] text-[clamp(2.75rem,5.5vw,5rem)] lg:text-[clamp(3rem,6vw,6rem)] font-light leading-[0.92] tracking-[-0.02em] mb-8">
+      Legal work<br />
+      done <em className="italic text-[#9866cb] not-italic">the right</em><br />
+      way.
+    </h1>
+    <p className="text-base lg:text-base leading-relaxed text-[rgba(245,240,232,0.58)] max-w-[420px] mb-12">
+      No black boxes. No surprise bills. No lawyers who disappear after you sign. Here's exactly how we work — from your first call to long-term brand protection.
+    </p>
+    <div className="flex flex-wrap gap-2.5">
+      <div className="border border-[rgba(152,102,203,0.25)] text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase px-[18px] py-2 text-[rgba(245,240,232,0.5)] hover:border-[#9866cb] hover:text-[#9866cb] transition-all">Transparent Process</div>
+      <div className="border border-[rgba(152,102,203,0.25)] text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase px-[18px] py-2 text-[rgba(245,240,232,0.5)] hover:border-[#9866cb] hover:text-[#9866cb] transition-all">Fixed Timelines</div>
+      <div className="border border-[rgba(152,102,203,0.25)] text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase px-[18px] py-2 text-[rgba(245,240,232,0.5)] hover:border-[#9866cb] hover:text-[#9866cb] transition-all">Flat Fees</div>
+      <div className="border border-[rgba(152,102,203,0.25)] text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase px-[18px] py-2 text-[rgba(245,240,232,0.5)] hover:border-[#9866cb] hover:text-[#9866cb] transition-all">Creative Industry Focus</div>
+    </div>
+  </div>
 
-        <div className="relative z-10 hidden lg:flex flex-col items-end justify-end gap-0 pb-1">
-          <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-[200px] last:border-b">
-            <div className="font-['Cormorant_Garamond',serif] text-5xl font-light text-[#9866cb] leading-none mb-1.5">48h</div>
-            <div className="text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Standard Contract Review</div>
-          </div>
-          <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-[200px] last:border-b">
-            <div className="font-['Cormorant_Garamond',serif] text-5xl font-light text-[#9866cb] leading-none mb-1.5">30m</div>
-            <div className="text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Free Discovery Call</div>
-          </div>
-          <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-[200px] last:border-b">
-            <div className="font-['Cormorant_Garamond',serif] text-5xl font-light text-[#9866cb] leading-none mb-1.5">100%</div>
-            <div className="text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Fee Transparency</div>
-          </div>
-          <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-[200px] last:border-b">
-            <div className="font-['Cormorant_Garamond',serif] text-5xl font-light text-[#9866cb] leading-none mb-1.5">500+</div>
-            <div className="text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Brands Protected</div>
-          </div>
-        </div>
+  <div className="relative z-10 hidden lg:flex flex-col items-end justify-end gap-0 pb-2 max-w-[220px]">
+    <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-full">
+      <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1.5">48h</div>
+      <div className="text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Standard Contract Review</div>
+    </div>
+    <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-full">
+      <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1.5">30m</div>
+      <div className="text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Free Discovery Call</div>
+    </div>
+    <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-full">
+      <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1.5">100%</div>
+      <div className="text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Fee Transparency</div>
+    </div>
+    <div className="text-right py-7 border-t border-[rgba(152,102,203,0.25)] w-full">
+      <div className="font-['Cormorant_Garamond',serif] text-4xl lg:text-5xl font-light text-[#9866cb] leading-none mb-1.5">500+</div>
+      <div className="text-xs lg:text-[0.65rem] tracking-[0.14em] uppercase text-[#888]">Brands Protected</div>
+    </div>
+  </div>
 
-        <div className="absolute left-8 lg:left-[60px] bottom-[90px] flex items-center gap-3.5 text-[0.65rem] tracking-[0.18em] uppercase text-[#888]">
-          <div className="w-[60px] h-px bg-[#888] relative overflow-hidden">
-            <div className="absolute top-0 left-[-100%] w-full h-full bg-[#9866cb] animate-[scanLine_2.2s_ease-in-out_infinite]" />
-          </div>
-          See the Process
-        </div>
-      </section>
+  <div className="absolute left-8 lg:left-[60px] bottom-[90px] flex items-center gap-3.5 text-xs lg:text-[0.65rem] tracking-[0.18em] uppercase text-[#888]">
+    <div className="w-[60px] h-px bg-[#888] relative overflow-hidden">
+      <div className="absolute top-0 left-[-100%] w-full h-full bg-[#9866cb] animate-[scanLine_2.2s_ease-in-out_infinite]" />
+    </div>
+    See the Process
+  </div>
+</section>
 
       {/* Timeline Section */}
       <section className="px-6 md:px-8 lg:px-[60px] py-24 lg:py-[140px] relative">
@@ -348,12 +366,19 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* Promise Strip - Purple theme */}
+      {/* Promise Strip - Purple theme with custom images */}
       <div className="bg-[#9866cb] overflow-hidden">
         <div className="flex flex-col lg:flex-row">
           {promises.map((promise, idx) => (
-            <div key={idx} className="flex-1 p-12 lg:p-[52px_36px] text-center border-r border-[rgba(10,10,10,0.15)] last:border-r-0 hover:bg-[rgba(10,10,10,0.06)] transition-colors">
-              <div className="text-[1.6rem] mb-3.5">{promise.icon}</div>
+            <div key={idx} className="flex-1 p-12 lg:p-[52px_36px] text-center border-r border-[rgba(10,10,10,0.15)] last:border-r-0 hover:bg-[rgba(10,10,10,0.06)] transition-colors group">
+              {/* Custom image icon instead of emoji */}
+              <div className="w-12 h-12 mx-auto mb-3.5">
+                <img 
+                  src={promise.iconPath}
+                  alt={promise.title}
+                  className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+                />
+              </div>
               <div className="font-['Bebas_Neue',sans-serif] text-[1.3rem] tracking-[0.1em] text-black mb-2">{promise.title}</div>
               <div className="text-[0.78rem] text-[rgba(10,10,10,0.6)] leading-relaxed">{promise.desc}</div>
             </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { FadeInSection } from '../../ui/FadeInSection'
 
@@ -9,7 +10,7 @@ const practices = [
   {
     id: 'brand-protection',
     num: '01',
-    icon: '🛡️',
+    iconPath: '/assets/contact-page/shield.png', // Add your custom icon path
     title: 'Brand Protection',
     tagline: 'Own your identity. Defend it fiercely.',
     description: 'Your brand is your most valuable asset. We make sure no one can copy it, steal it, or profit from it without your permission.',
@@ -30,7 +31,7 @@ const practices = [
   {
     id: 'fashion-startup-law',
     num: '02',
-    icon: '✂️',
+    iconPath: '/assets/contact-page/scissor.png',
     title: 'Fashion Startup Law',
     tagline: 'Built right from day one.',
     description: 'Launching a fashion brand involves far more legal complexity than most founders realise. We help you structure smartly, protect founder rights, and position your label for investment.',
@@ -51,7 +52,7 @@ const practices = [
   {
     id: 'manufacturing-supply-chain',
     num: '03',
-    icon: '🏭',
+    iconPath: '/assets/contact-page/factory.png',
     title: 'Manufacturing & Supply Chain',
     tagline: 'Contracts that protect your production.',
     description: 'Bad vendor contracts can destroy a season. We draft and review manufacturing agreements, vendor terms, and compliance frameworks.',
@@ -72,7 +73,7 @@ const practices = [
   {
     id: 'retail-ecommerce-law',
     num: '04',
-    icon: '🛍️',
+    iconPath: '/assets/contact-page/kart.png',
     title: 'Retail & E-Commerce Law',
     tagline: 'Sell everywhere. Comply everywhere.',
     description: "Whether you're on Myntra, launching your own D2C store, or signing a marketplace agreement — we handle the compliance.",
@@ -93,7 +94,7 @@ const practices = [
   {
     id: 'brand-collaborations',
     num: '05',
-    icon: '🤝',
+    iconPath: '/assets/contact-page/heart.png',
     title: 'Brand Collaborations',
     tagline: 'Collab confidently. Protect your share.',
     description: 'Designer drops, celebrity lines, licensing deals — collaborations create immense value but carry serious legal risk if structured badly.',
@@ -114,7 +115,7 @@ const practices = [
   {
     id: 'fashion-litigation',
     num: '06',
-    icon: '⚖️',
+    iconPath: '/assets/contact-page/fashion.png',
     title: 'Fashion Litigation',
     tagline: "When it's time to fight — we fight.",
     description: 'Design piracy, counterfeit goods, contract breaches — when someone crosses a line, you need lawyers who move fast and hit hard.',
@@ -135,7 +136,7 @@ const practices = [
   {
     id: 'influencer-law',
     num: '07',
-    icon: '📱',
+    iconPath: '/assets/contact-page/camera.png',
     title: 'Influencer Law',
     tagline: 'Your content. Your terms. Your protection.',
     description: 'Brand deals, ambassador contracts, ASCI compliance, copyright disputes — influencer law is a minefield.',
@@ -156,7 +157,7 @@ const practices = [
   {
     id: 'media-entertainment-law',
     num: '08',
-    icon: '🎬',
+    iconPath: '/assets/contact-page/movie.png',
     title: 'Media & Entertainment Law',
     tagline: 'From set to screen. Legally protected.',
     description: 'Production agreements, OTT compliance, defamation cases, celebrity image rights — we advise content creators and production houses.',
@@ -177,7 +178,7 @@ const practices = [
   {
     id: 'creator-economy-law',
     num: '09',
-    icon: '🎙️',
+    iconPath: '/assets/contact-page/mic.png',
     title: 'Creator Economy Law',
     tagline: 'New economy. Real legal needs.',
     description: 'YouTubers, podcasters, affiliate marketers, and digital creators face unique legal challenges.',
@@ -205,8 +206,6 @@ export default function PracticeAreasPage() {
 
   return (
     <>
-      
-      
       <main className="pt-32 pb-20">
         {/* Hero Section */}
         <section className="px-6 md:px-[60px] mb-20">
@@ -235,7 +234,14 @@ export default function PracticeAreasPage() {
               <FadeInSection key={idx} delay={idx * 0.05}>
                 <Link href={`practice-areas/${practice.id}`}>
                   <div className="bg-[rgba(255,255,255,0.02)] border border-[rgba(152,102,203,0.25)] p-8 hover:border-[#9866cb] transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
-                    <div className="text-4xl mb-4">{practice.icon}</div>
+                    {/* Custom image icon instead of emoji */}
+                    <div className="w-12 h-12 mb-4">
+                      <img 
+                        src={practice.iconPath}
+                        alt={practice.title}
+                        className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+                      />
+                    </div>
                     <div className="text-sm text-[#9866cb] font-mono mb-2">{practice.num}</div>
                     <h2 className="font-['Cormorant_Garamond'] text-2xl mb-3 text-[#f5f0e8] group-hover:text-[#9866cb] transition-colors">
                       {practice.title}
@@ -286,8 +292,6 @@ export default function PracticeAreasPage() {
           </div>
         </section>
       </main>
-
-    
     </>
   )
 }

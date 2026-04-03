@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import { Navbar } from '../layout/Navbar'
 import { Footer } from '../layout/Footer'
 
-
 import { Ticker } from '../ui/Ticker'
 import { FadeInSection } from '../ui/FadeInSection'
 
@@ -40,88 +39,93 @@ export default function HomePage() {
   ]
 
   const practices = [
-    {
-      num: '01',
-      icon: '🛡️',
-      title: 'Brand Protection',
-      tagline: 'Own your identity. Defend it fiercely.',
-      description:
-        'Your brand is your most valuable asset. We make sure no one can copy it, steal it, or profit from it without your permission.',
-      services: ['Trademark Registration', 'Design Registration', 'Copyright Protection', 'Trade Dress Protection', 'Anti-Counterfeiting'],
-    },
-    {
-      num: '02',
-      icon: '✂️',
-      title: 'Fashion Startup Law',
-      tagline: 'Built right from day one.',
-      description:
-        'Launching a fashion brand involves far more legal complexity than most founders realise. We help you structure smartly, protect founder rights, and position your label for investment.',
-      services: ['Label Incorporation', 'Founder Agreements', 'Investment & Funding', 'Brand Structuring'],
-    },
-    {
-      num: '03',
-      icon: '🏭',
-      title: 'Manufacturing & Supply Chain',
-      tagline: 'Contracts that protect your production.',
-      description:
-        'Bad vendor contracts can destroy a season. We draft and review manufacturing agreements, vendor terms, and compliance frameworks.',
-      services: ['Manufacturer Agreements', 'Vendor Contracts', 'Import/Export Compliance', 'Sustainability Compliance'],
-    },
-    {
-      num: '04',
-      icon: '🛍️',
-      title: 'Retail & E-Commerce Law',
-      tagline: 'Sell everywhere. Comply everywhere.',
-      description:
-        "Whether you're on Myntra, launching your own D2C store, or signing a marketplace agreement — we handle the compliance.",
-      services: ['Marketplace Agreements', 'Terms & Privacy Policies', 'Consumer Law Compliance', 'Online Marketplace Disputes'],
-    },
-    {
-      num: '05',
-      icon: '🤝',
-      title: 'Brand Collaborations',
-      tagline: 'Collab confidently. Protect your share.',
-      description:
-        'Designer drops, celebrity lines, licensing deals — collaborations create immense value but carry serious legal risk if structured badly.',
-      services: ['Designer Collaborations', 'Celebrity Collaborations', 'Licensing Agreements', 'Merchandising Agreements'],
-    },
-    {
-      num: '06',
-      icon: '⚖️',
-      title: 'Fashion Litigation',
-      tagline: "When it's time to fight — we fight.",
-      description:
-        'Design piracy, counterfeit goods, contract breaches — when someone crosses a line, you need lawyers who move fast and hit hard.',
-      services: ['Trademark Infringement', 'Design Piracy', 'Counterfeit Actions', 'Contract Disputes'],
-    },
-    {
-      num: '07',
-      icon: '📱',
-      title: 'Influencer Law',
-      tagline: 'Your content. Your terms. Your protection.',
-      description:
-        'Brand deals, ambassador contracts, ASCI compliance, copyright disputes — influencer law is a minefield.',
-      services: ['Brand Collaboration Contracts', 'Ambassador Agreements', 'ASCI Compliance', 'Revenue Sharing', 'Content IP Rights', 'Influencer Disputes'],
-    },
-    {
-      num: '08',
-      icon: '🎬',
-      title: 'Media & Entertainment Law',
-      tagline: 'From set to screen. Legally protected.',
-      description:
-        'Production agreements, OTT compliance, defamation cases, celebrity image rights — we advise content creators and production houses.',
-      services: ['Production Agreements', 'OTT Compliance', 'Defamation & Reputation', 'Celebrity Rights', 'Content Takedowns'],
-    },
-    {
-      num: '09',
-      icon: '🎙️',
-      title: 'Creator Economy Law',
-      tagline: 'New economy. Real legal needs.',
-      description:
-        'YouTubers, podcasters, affiliate marketers, and digital creators face unique legal challenges.',
-      services: ['Creator Contracts', 'Podcast Agreements', 'Affiliate Agreements', 'Monetization Structures', 'Platform Agreements'],
-    },
-  ]
+  {
+    num: '01',
+    
+    iconPath: '/assets/contact-page/shield.png', // Add your custom icon path
+    title: 'Brand Protection',
+    tagline: 'Own your identity. Defend it fiercely.',
+    description:
+      'Your brand is your most valuable asset. We make sure no one can copy it, steal it, or profit from it without your permission.',
+    services: ['Trademark Registration', 'Design Registration', 'Copyright Protection', 'Trade Dress Protection', 'Anti-Counterfeiting'],
+  },
+  {
+    num: '02',
+    
+    iconPath: '/assets/contact-page/scissor.png',
+    title: 'Fashion Startup Law',
+    tagline: 'Built right from day one.',
+    description:
+      'Launching a fashion brand involves far more legal complexity than most founders realise. We help you structure smartly, protect founder rights, and position your label for investment.',
+    services: ['Label Incorporation', 'Founder Agreements', 'Investment & Funding', 'Brand Structuring'],
+  },
+  {
+    num: '03',
+    
+    iconPath: '/assets/contact-page/factory.png',
+    title: 'Manufacturing & Supply Chain',
+    tagline: 'Contracts that protect your production.',
+    description:
+      'Bad vendor contracts can destroy a season. We draft and review manufacturing agreements, vendor terms, and compliance frameworks.',
+    services: ['Manufacturer Agreements', 'Vendor Contracts', 'Import/Export Compliance', 'Sustainability Compliance'],
+  },
+  {
+    num: '04',
+    
+    iconPath: '/assets/contact-page/kart.png',
+    title: 'Retail & E-Commerce Law',
+    tagline: 'Sell everywhere. Comply everywhere.',
+    description:
+      "Whether you're on Myntra, launching your own D2C store, or signing a marketplace agreement — we handle the compliance.",
+    services: ['Marketplace Agreements', 'Terms & Privacy Policies', 'Consumer Law Compliance', 'Online Marketplace Disputes'],
+  },
+  {
+    num: '05',
+   
+    iconPath: '/assets/contact-page/heart.png',
+    title: 'Brand Collaborations',
+    tagline: 'Collab confidently. Protect your share.',
+    description:
+      'Designer drops, celebrity lines, licensing deals — collaborations create immense value but carry serious legal risk if structured badly.',
+    services: ['Designer Collaborations', 'Celebrity Collaborations', 'Licensing Agreements', 'Merchandising Agreements'],
+  },
+  {
+    num: '06',
+    iconPath: '/assets/contact-page/balance.png',
+    title: 'Fashion Litigation',
+    tagline: "When it's time to fight — we fight.",
+    description:
+      'Design piracy, counterfeit goods, contract breaches — when someone crosses a line, you need lawyers who move fast and hit hard.',
+    services: ['Trademark Infringement', 'Design Piracy', 'Counterfeit Actions', 'Contract Disputes'],
+  },
+  {
+    num: '07',
+    iconPath: '/assets/contact-page/camera.png',
+    title: 'Influencer Law',
+    tagline: 'Your content. Your terms. Your protection.',
+    description:
+      'Brand deals, ambassador contracts, ASCI compliance, copyright disputes — influencer law is a minefield.',
+    services: ['Brand Collaboration Contracts', 'Ambassador Agreements', 'ASCI Compliance', 'Revenue Sharing', 'Content IP Rights', 'Influencer Disputes'],
+  },
+  {
+    num: '08',
+    iconPath: '/assets/contact-page/movie.png',
+    title: 'Media & Entertainment Law',
+    tagline: 'From set to screen. Legally protected.',
+    description:
+      'Production agreements, OTT compliance, defamation cases, celebrity image rights — we advise content creators and production houses.',
+    services: ['Production Agreements', 'OTT Compliance', 'Defamation & Reputation', 'Celebrity Rights', 'Content Takedowns'],
+  },
+  {
+    num: '09',
+    iconPath: '/assets/contact-page/graph.png',
+    title: 'Creator Economy Law',
+    tagline: 'New economy. Real legal needs.',
+    description:
+      'YouTubers, podcasters, affiliate marketers, and digital creators face unique legal challenges.',
+    services: ['Creator Contracts', 'Podcast Agreements', 'Affiliate Agreements', 'Monetization Structures', 'Platform Agreements'],
+  },
+]
 
   const processSteps = [
     {
@@ -147,45 +151,75 @@ export default function HomePage() {
   ]
 
   const differentiators = [
-    {
-      icon: '⚡',
-      title: 'Speed that matches your business',
-      desc: "Campaigns don't wait. Neither do we. Standard contracts reviewed in 48 hours. Urgent matters same day.",
-    },
-    {
-      icon: '🎯',
-      title: 'Specialists, not generalists',
-      desc: 'We only work in fashion, influencer, media, and creator law. This isnt a side practice — it\'s all we do.',
-    },
-    {
-      icon: '💬',
-      title: 'Plain language, always',
-      desc: 'We write contracts your team can read. We explain your rights in plain English. No unnecessary legalese.',
-    },
-    {
-      icon: '📊',
-      title: 'Flat fees, no surprises',
-      desc: "You'll know exactly what you're paying before we begin. No hourly billing shocks, no hidden costs.",
-    },
-    {
-      icon: '🏆',
-      title: 'Track record in your world',
-      desc: "We've protected 500+ brands, registered 1000+ trademarks, and settled disputes for India's leading creators.",
-    },
-  ]
+  {
+    iconPath: '/assets/contact-page/lightning.png',  // Add your custom icon path
+    title: 'Speed that matches your business',
+    desc: "Campaigns don't wait. Neither do we. Standard contracts reviewed in 48 hours. Urgent matters same day.",
+  },
+  {
+    iconPath: '/assets/contact-page/target.png',
+    title: 'Specialists, not generalists',
+    desc: 'We only work in fashion, influencer, media, and creator law. This isnt a side practice — it\'s all we do.',
+  },
+  {
+    iconPath: '/assets/contact-page/chatbox.png',
+    title: 'Plain language, always',
+    desc: 'We write contracts your team can read. We explain your rights in plain English. No unnecessary legalese.',
+  },
+  {
+    iconPath: '/assets/contact-page/graph.png',
+    title: 'Flat fees, no surprises',
+    desc: "You'll know exactly what you're paying before we begin. No hourly billing shocks, no hidden costs.",
+  },
+  {
+    iconPath: '/assets/contact-page/trophie.png',
+    title: 'Track record in your world',
+    desc: "We've protected 500+ brands, registered 1000+ trademarks, and settled disputes for India's leading creators.",
+  },
+]
 
   const industries = [
-    { emoji: '👗', name: 'Fashion Labels' },
-    { emoji: '📸', name: 'Influencers' },
-    { emoji: '🎬', name: 'Media Houses' },
-    { emoji: '🎙️', name: 'Content Creators' },
-    { emoji: '🌟', name: 'Celebrities' },
-    { emoji: '🛍️', name: 'D2C Brands' },
-    { emoji: '🏭', name: 'Manufacturers' },
-    { emoji: '🎵', name: 'Musicians & Artists' },
-    { emoji: '💄', name: 'Beauty Brands' },
-    { emoji: '📺', name: 'OTT Platforms' },
-  ]
+  { 
+    name: 'Fashion Labels',
+    iconPath: '/assets/contact-page/fashion.png'
+  },
+  { 
+    name: 'Influencers',
+    iconPath: '/assets/contact-page/camera.png'
+  },
+  { 
+    name: 'Media Houses',
+    iconPath: '/assets/contact-page/movie.png'
+  },
+  { 
+    name: 'Content Creators',
+    iconPath: '/assets/contact-page/mic.png'
+  },
+  { 
+    name: 'Celebrities',
+    iconPath: '/assets/contact-page/factory.png'
+  },
+  { 
+    name: 'D2C Brands',
+    iconPath: '/assets/contact-page/graph.png'
+  },
+  { 
+    name: 'Manufacturers',
+    iconPath: '/assets/contact-page/factory.png'
+  },
+  { 
+    name: 'Musicians & Artists',
+    iconPath: '/assets/contact-page/music.png'
+  },
+  { 
+    name: 'Beauty Brands',
+    iconPath: '/assets/contact-page/lipstick.png'
+  },
+  { 
+    name: 'OTT Platforms',
+    iconPath: '/assets/contact-page/tv.png'
+  },
+]
 
   // Don't render custom cursor until mounted to avoid hydration mismatch
   if (!mounted) {
@@ -225,11 +259,9 @@ export default function HomePage() {
           <div className="relative z-10 max-w-6xl mx-auto w-full">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-px bg-[#9866cb]" />
-              {/* <span className="text-[0.72rem] tracking-[0.2em] uppercase text-[#9866cb]">
-                India's First Fashion & Creator Economy Law Firm
-              </span> */}
             </div>
-            <h1 className="font-['Cormorant_Garamond'] text-[clamp(2.5rem,7vw,6rem)] font-light leading-[1.1] tracking-[-0.02em] mb-6">
+            {/* Title size reduced: from clamp(2.5rem,7vw,6rem) to clamp(2rem,5vw,4.5rem) */}
+            <h1 className="font-['Cormorant_Garamond'] text-[clamp(2rem,5vw,4.5rem)] font-light leading-[1.1] tracking-[-0.02em] mb-6">
               Law Built
               <br />
               for the
@@ -338,54 +370,53 @@ export default function HomePage() {
 
         {/* Practice Areas Section */}
         <section id="practices" className="bg-[rgba(255,255,255,0.02)] px-6 md:px-[60px] py-20 md:py-[120px]">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-20">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-[30px] h-px bg-[#9866cb]" />
-                  <span className="text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">What We Do</span>
-                </div>
-                <h2 className="font-['Cormorant_Garamond'] text-[clamp(2rem,5vw,4rem)] font-light leading-[1.05]">
-                  Nine practice areas.
-                  <br />
-                  <em className="italic text-[#9866cb]">One focused firm.</em>
-                </h2>
-              </div>
-              <p className="max-w-[280px] text-sm leading-relaxed text-[rgba(245,240,232,0.45)] text-right mt-4 md:mt-0">
-                Every practice area has been built ground-up for the creative economy — not retrofitted from corporate law.
-              </p>
-            </div>
+  <div className="max-w-7xl mx-auto">
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-20">
+      <div>
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-[30px] h-px bg-[#9866cb]" />
+          <span className="text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">What We Do</span>
+        </div>
+        <h2 className="font-['Cormorant_Garamond'] text-[clamp(2rem,5vw,4rem)] font-light leading-[1.05]">
+          Nine practice areas.
+          <br />
+          <em className="italic text-[#9866cb]">One focused firm.</em>
+        </h2>
+      </div>
+      <p className="max-w-[280px] text-sm leading-relaxed text-[rgba(245,240,232,0.45)] text-right mt-4 md:mt-0">
+        Every practice area has been built ground-up for the creative economy — not retrofitted from corporate law.
+      </p>
+    </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(152,102,203,0.25)]">
-              {practices.map((practice, idx) => (
-                <FadeInSection key={idx} delay={idx * 0.05}>
-                  <div className="bg-[#0a0a0a] p-8 md:p-11 relative overflow-hidden transition-all duration-400 hover:-translate-y-1 group">
-                    <div className="absolute top-9 right-9 font-['Bebas_Neue'] text-6xl text-[#9866cb] opacity-7 leading-none">
-                      {practice.num}
-                    </div>
-                    <div className="text-[1.8rem] mb-5">{practice.icon}</div>
-                    <h3 className="font-['Cormorant_Garamond'] text-xl md:text-2xl font-normal mb-3 text-[#f5f0e8]">
-                      {practice.title}
-                    </h3>
-                    <div className="text-sm text-[#9866cb] italic mb-5">{practice.tagline}</div>
-                    <p className="text-sm leading-relaxed text-[rgba(245,240,232,0.55)] mb-6">{practice.description}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {practice.services.slice(0, 4).map((service, i) => (
-                        <span
-                          key={i}
-                          className="text-[0.65rem] tracking-[0.1em] uppercase border border-[rgba(152,102,203,0.25)] px-3 py-1.5 text-[rgba(245,240,232,0.5)] group-hover:border-[rgba(152,102,203,0.4)] group-hover:text-[#b87eff] transition-all"
-                        >
-                          {service}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </FadeInSection>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(152,102,203,0.25)]">
+      {practices.map((practice, idx) => (
+        <FadeInSection key={idx} delay={idx * 0.05}>
+          <div className="bg-[#0a0a0a] p-8 md:p-11 relative overflow-hidden transition-all duration-400 hover:-translate-y-1 group">
+            <div className="absolute top-9 right-9 font-['Bebas_Neue'] text-6xl text-[#9866cb] opacity-7 leading-none">
+              {practice.num}
+            </div>
+            {/* Icon section completely removed */}
+            <h3 className="font-['Cormorant_Garamond'] text-xl md:text-2xl font-normal mb-3 text-[#f5f0e8]">
+              {practice.title}
+            </h3>
+            <div className="text-sm text-[#9866cb] italic mb-5">{practice.tagline}</div>
+            <p className="text-sm leading-relaxed text-[rgba(245,240,232,0.55)] mb-6">{practice.description}</p>
+            <div className="flex flex-wrap gap-2">
+              {practice.services.slice(0, 4).map((service, i) => (
+                <span
+                  key={i}
+                  className="text-[0.65rem] tracking-[0.1em] uppercase border border-[rgba(152,102,203,0.25)] px-3 py-1.5 text-[rgba(245,240,232,0.5)] group-hover:border-[rgba(152,102,203,0.4)] group-hover:text-[#b87eff] transition-all"
+                >
+                  {service}
+                </span>
               ))}
             </div>
           </div>
-        </section>
-
+        </FadeInSection>
+      ))}
+    </div>
+  </div>
+</section>
         {/* Process Section */}
         <section id="process" className="px-6 md:px-[60px] py-20 md:py-[120px]">
           <div className="max-w-7xl mx-auto">
@@ -420,95 +451,121 @@ export default function HomePage() {
 
         {/* Why Buzz Law Section */}
         <section id="why" className="bg-[#f5f0e8] text-[#0a0a0a] px-6 md:px-[60px] py-20 md:py-[120px]">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-[30px] h-px bg-[#9866cb]" />
-              <span className="text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">Why Buzz Law</span>
+  <div className="max-w-7xl mx-auto">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-[30px] h-px bg-[#9866cb]" />
+      <span className="text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">Why Buzz Law</span>
+    </div>
+    <h2 className="font-['Cormorant_Garamond'] text-[clamp(2rem,5vw,4rem)] font-light leading-[1.05] text-[#0a0a0a]">
+      We're not a general firm
+      <br />
+      that handles <em className="italic text-[#9866cb]">some</em> IP.
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-12 md:gap-[60px] mt-12 md:mt-[60px]">
+      <FadeInSection>
+        <p className="text-base md:text-[1.05rem] leading-relaxed text-[rgba(10,10,10,0.65)] mb-5">
+          Most law firms were built for corporations, real estate, and litigation. Creative businesses — fashion labels,
+          influencers, media companies, creators — are forced to work with lawyers who treat their industry as exotic.
+        </p>
+        <p className="text-base md:text-[1.05rem] leading-relaxed text-[rgba(10,10,10,0.65)] mb-5">
+          We built Buzz Law from the ground up for the creative economy. Every lawyer on our team has worked directly
+          with fashion brands, digital creators, or entertainment companies. We don't learn your industry on your bill.
+        </p>
+        <p className="text-base md:text-[1.05rem] leading-relaxed text-[rgba(10,10,10,0.65)] mb-5">
+          The result: faster turnarounds, sharper contracts, and legal strategy that actually fits how creative
+          businesses grow and operate in India today.
+        </p>
+        <button
+          onClick={openModal}
+          className="bg-[#9866cb] text-[#0a0a0a] px-8 py-3 text-xs tracking-[0.15em] uppercase font-medium border-none transition-all hover:bg-[#b87eff] hover:-translate-y-0.5 mt-4 inline-block cursor-pointer"
+        >
+          Talk to a Lawyer →
+        </button>
+      </FadeInSection>
+
+      <FadeInSection delay={0.2}>
+        {differentiators.map((diff, idx) => (
+          <div key={idx} className="border-b border-[rgba(10,10,10,0.1)] py-6 flex gap-5 items-start group">
+            {/* Custom image icon */}
+            <div className="w-8 h-8 flex-shrink-0 mt-0.5">
+              <img 
+                src={diff.iconPath}
+                alt={diff.title}
+                className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+              />
             </div>
-            <h2 className="font-['Cormorant_Garamond'] text-[clamp(2rem,5vw,4rem)] font-light leading-[1.05] text-[#0a0a0a]">
-              We're not a general firm
-              <br />
-              that handles <em className="italic text-[#9866cb]">some</em> IP.
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-12 md:gap-[60px] mt-12 md:mt-[60px]">
-              <FadeInSection>
-                <p className="text-base md:text-[1.05rem] leading-relaxed text-[rgba(10,10,10,0.65)] mb-5">
-                  Most law firms were built for corporations, real estate, and litigation. Creative businesses — fashion labels,
-                  influencers, media companies, creators — are forced to work with lawyers who treat their industry as exotic.
-                </p>
-                <p className="text-base md:text-[1.05rem] leading-relaxed text-[rgba(10,10,10,0.65)] mb-5">
-                  We built Buzz Law from the ground up for the creative economy. Every lawyer on our team has worked directly
-                  with fashion brands, digital creators, or entertainment companies. We don't learn your industry on your bill.
-                </p>
-                <p className="text-base md:text-[1.05rem] leading-relaxed text-[rgba(10,10,10,0.65)] mb-5">
-                  The result: faster turnarounds, sharper contracts, and legal strategy that actually fits how creative
-                  businesses grow and operate in India today.
-                </p>
-                <button
-                  onClick={openModal}
-                  className="bg-[#9866cb] text-[#0a0a0a] px-8 py-3 text-xs tracking-[0.15em] uppercase font-medium border-none transition-all hover:bg-[#b87eff] hover:-translate-y-0.5 mt-4 inline-block cursor-pointer"
-                >
-                  Talk to a Lawyer →
-                </button>
-              </FadeInSection>
-
-              <FadeInSection delay={0.2}>
-                {differentiators.map((diff, idx) => (
-                  <div key={idx} className="border-b border-[rgba(10,10,10,0.1)] py-6 flex gap-5 items-start">
-                    <div className="text-[1.4rem] flex-shrink-0 mt-0.5">{diff.icon}</div>
-                    <div>
-                      <div className="font-medium text-sm mb-1.5 text-[#0a0a0a]">{diff.title}</div>
-                      <div className="text-sm leading-relaxed text-[rgba(10,10,10,0.55)]">{diff.desc}</div>
-                    </div>
-                  </div>
-                ))}
-              </FadeInSection>
+            <div>
+              <div className="font-medium text-sm mb-1.5 text-[#0a0a0a]">{diff.title}</div>
+              <div className="text-sm leading-relaxed text-[rgba(10,10,10,0.55)]">{diff.desc}</div>
             </div>
           </div>
-        </section>
+        ))}
+      </FadeInSection>
+    </div>
+  </div>
+</section>
 
         {/* Industries Section */}
         <section id="industries" className="px-6 md:px-[60px] py-20 md:py-[120px]">
-          <div className="max-w-7xl mx-auto">
-            <div className="mb-16 md:mb-[70px]">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-[30px] h-px bg-[#9866cb]" />
-                <span className="text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">Who We Serve</span>
-              </div>
-              <h2 className="font-['Cormorant_Garamond'] text-[clamp(2rem,5vw,4rem)] font-light leading-[1.05]">
-                Built for every
-                <br />
-                corner of the <em className="italic text-[#9866cb]">creative world.</em>
-              </h2>
-            </div>
+  <div className="max-w-7xl mx-auto">
+    <div className="mb-16 md:mb-[70px]">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-[30px] h-px bg-[#9866cb]" />
+        <span className="text-[0.68rem] tracking-[0.22em] uppercase text-[#9866cb]">Who We Serve</span>
+      </div>
+      <h2 className="font-['Cormorant_Garamond'] text-[clamp(2rem,5vw,4rem)] font-light leading-[1.05]">
+        Built for every
+        <br />
+        corner of the <em className="italic text-[#9866cb]">creative world.</em>
+      </h2>
+    </div>
 
-            <FadeInSection>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-[rgba(152,102,203,0.25)] mb-px">
-                {industries.slice(0, 5).map((industry, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-[#0a0a0a] p-6 md:p-8 text-center transition-all border-b-2 border-transparent hover:bg-[rgba(152,102,203,0.05)] hover:border-b-[#9866cb]"
-                  >
-                    <div className="text-[1.8rem] mb-3">{industry.emoji}</div>
-                    <div className="text-[0.78rem] tracking-[0.08em] uppercase text-[rgba(245,240,232,0.6)]">{industry.name}</div>
-                  </div>
-                ))}
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-[rgba(152,102,203,0.25)]">
-                {industries.slice(5, 10).map((industry, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-[#0a0a0a] p-6 md:p-8 text-center transition-all border-b-2 border-transparent hover:bg-[rgba(152,102,203,0.05)] hover:border-b-[#9866cb]"
-                  >
-                    <div className="text-[1.8rem] mb-3">{industry.emoji}</div>
-                    <div className="text-[0.78rem] tracking-[0.08em] uppercase text-[rgba(245,240,232,0.6)]">{industry.name}</div>
-                  </div>
-                ))}
-              </div>
-            </FadeInSection>
+    <FadeInSection>
+      {/* First row - 5 industries */}
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-[rgba(152,102,203,0.25)] mb-px">
+        {industries.slice(0, 5).map((industry, idx) => (
+          <div
+            key={idx}
+            className="bg-[#0a0a0a] p-6 md:p-8 text-center transition-all border-b-2 border-transparent hover:bg-[rgba(152,102,203,0.05)] hover:border-b-[#9866cb] group"
+          >
+            <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+              <img 
+                src={industry.iconPath}
+                alt={industry.name}
+                className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div className="text-[0.78rem] tracking-[0.08em] uppercase text-[rgba(245,240,232,0.6)] group-hover:text-[#9866cb] transition-colors">
+              {industry.name}
+            </div>
           </div>
-        </section>
+        ))}
+      </div>
+      
+      {/* Second row - 5 industries */}
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-[rgba(152,102,203,0.25)]">
+        {industries.slice(5, 10).map((industry, idx) => (
+          <div
+            key={idx}
+            className="bg-[#0a0a0a] p-6 md:p-8 text-center transition-all border-b-2 border-transparent hover:bg-[rgba(152,102,203,0.05)] hover:border-b-[#9866cb] group"
+          >
+            <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+              <img 
+                src={industry.iconPath}
+                alt={industry.name}
+                className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div className="text-[0.78rem] tracking-[0.08em] uppercase text-[rgba(245,240,232,0.6)] group-hover:text-[#9866cb] transition-colors">
+              {industry.name}
+            </div>
+          </div>
+        ))}
+      </div>
+    </FadeInSection>
+  </div>
+</section>
 
         {/* CTA Section */}
         <section className="text-center px-6 md:px-[60px] py-24 md:py-[140px] relative overflow-hidden">
